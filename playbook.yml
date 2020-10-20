@@ -1,0 +1,10 @@
+- name: test
+  hosts: localhost
+  connection: local
+  become: no
+  tasks:
+    - name: print var
+      debug:
+        msg: "{{ something_else }}"
+  
+
